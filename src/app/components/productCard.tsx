@@ -8,9 +8,11 @@ export const ProductCard = ({
   id,
   product,
   className,
+  contentClassName,
 }: {
   id?: string;
   className?: string;
+  contentClassName?: string;
   product: ProductInterface;
 }) => {
   return (
@@ -35,7 +37,7 @@ export const ProductCard = ({
         )}
       </div>
 
-      <div className={`product-card__content`}>
+      <div className={`product-card__content ${contentClassName}`}>
         <h4>
           {product.fields.Name}
           {product.fields.Size === "Standart"

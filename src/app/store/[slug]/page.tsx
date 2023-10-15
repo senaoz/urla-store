@@ -21,7 +21,7 @@ export default async function Product({
   );
 
   return (
-    <>
+    <div className="custom-container bg-primary text-amber-50">
       <div className="block gap-8 md:grid md:grid-cols-2">
         <Image
           className="w-full shadow-xl"
@@ -72,6 +72,6 @@ export default async function Product({
           </Link>
         ))}
       </div>
-    </>
+    </div>
   );
 }

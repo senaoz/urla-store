@@ -1,11 +1,10 @@
 var Airtable = require("airtable");
 
 Airtable.configure({
-  apiKey:
-    "patXuhMAA8wbAkx9r.ca42d3038d882e6b729792708bd92862250f86ad47f81cfc968ede04161544fc",
+  apiKey: process.env.AIRTABLE_API_KEY,
 });
 
-const base = Airtable.base("appQsFdWaHkxdO52p");
+const base = Airtable.base(process.env.AIRTABLE_BASE);
 
 async function loadProducts() {
   const table = base("Products");

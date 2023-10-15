@@ -22,20 +22,16 @@ export function Navigation() {
       name: "Tüm Ürünler",
       path: "/store",
     },
-    {
-      name: "Hakkımızda",
-      path: "/hakkimizda",
-    },
   ];
 
   return (
-    <nav className="mb-6 flex items-center justify-center gap-4">
-      <Image src={logo} width={120} alt={"s"} />
+    <nav className="custom-container py-4-important flex items-center justify-center gap-4">
+      <Image src={logo} width={120} alt={"Urla Zeytin Ciftiligi"} />
       <span className="grow"></span>
 
       {links.map((link) => (
         <Link
-          className={`link ${pathname === link.path ? "active" : ""}`}
+          className={`text-center ${pathname === link.path ? "active" : ""}`}
           href={link.path}
           key={link.name}
         >
