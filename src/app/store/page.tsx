@@ -2,7 +2,7 @@ import { ProductCard } from "@/app/components/productCard";
 import { loadProducts } from "@/utils/airtable";
 import { ProductInterface } from "@/interfaces";
 
-export default async function Home() {
+export default async function Products() {
   const data = await loadProducts();
 
   return (
