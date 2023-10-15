@@ -3,7 +3,6 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "src/app/assets/logo.svg";
 
 interface LinkInterface {
   name: string;
@@ -26,8 +25,13 @@ export function Navigation() {
 
   return (
     <nav className="custom-container py-4-important flex items-center justify-center gap-4">
-      <Image src={logo} width={120} alt={"Urla Zeytin Ciftiligi"} />
-      <span className="grow"></span>
+      <Image
+        src={"/logo.svg"}
+        width={120}
+        height={200}
+        alt={"Urla Zeytin Ciftiligi"}
+      />
+      <div className="grow"></div>
 
       {links.map((link) => (
         <Link

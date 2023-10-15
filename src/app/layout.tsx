@@ -20,10 +20,10 @@ export default function RootLayout({
       <body className={`${inter.className} typography min-h-screen bg-primary`}>
         <Navigation />
         {children}
+        <div className="custom-container text-right text-amber-50">
+          urlaolivefarms@gmail.com - 0505 697 45 08
+        </div>
       </body>
-      <div className="custom-container text-right text-amber-50">
-        urlaolivefarms@gmail.com - 0505 697 45 08
-      </div>
     </html>
   );
 }

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ProductCard } from "@/app/components/productCard";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import React from "react";
 
 export default async function Product({
   params,
@@ -45,19 +46,23 @@ export default async function Product({
           <Markdown>{product.fields.Description}</Markdown>
           <Markdown>{product.fields.Contents}</Markdown>
           <div className="h-4" />
-          <Link
-            className="button"
-            href={
-              product.fields.Link
-                ? product.fields.Link
-                : `https://api.whatsapp.com/send?phone=905532704508&text=Merhaba, ${
-                    product.fields.Name + " - " + product.fields.Size
-                  } ürününü sipariş vermek istiyorum.`
-            }
-            target={"_blank"}
-          >
-            Sipariş Ver
-          </Link>
+          {product.fields.InStock ? (
+            <Link
+              className="button"
+              href={
+                product.fields.Link
+                  ? product.fields.Link
+                  : `https://api.whatsapp.com/send?phone=905532704508&text=Merhaba, ${
+                      product.fields.Name + " - " + product.fields.Size
+                    } ürününü sipariş vermek istiyorum.`
+              }
+              target={"_blank"}
+            >
+              Satın Al
+            </Link>
+          ) : (
+            <div className="button text-center">Stokta yok</div>
+          )}
         </div>
       </div>
       <div className="mt-12 grid grid-cols-2 gap-4 opacity-90 sm:grid-cols-3 lg:grid-cols-4">

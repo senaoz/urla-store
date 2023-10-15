@@ -1,19 +1,18 @@
 import { ProductCard } from "@/app/components/productCard";
 import { loadProducts } from "@/utils/airtable";
 import { ProductInterface } from "@/interfaces";
-
-import Image from "next/image";
-import logo from "src/app/assets/logo.svg";
 import Link from "next/link";
 
 export default async function Home() {
-  const data = await loadProducts();
+  const data = await loadProducts().then((data) => {
+    return data.slice(0, 4);
+  });
 
   return (
     <>
       <div className="custom-container text-amber-50">
         <div className="flex flex-col items-center justify-center gap-4">
-          <Image src={logo} width={450} alt={""} />
+          <img src={"/logo.svg"} width={450} alt={"logo"} />
         </div>
         <div className="mt-12">
           <span className="text-3xl font-bold text-secondary">
@@ -46,8 +45,8 @@ export default async function Home() {
             </div>
             <div>
               <h3>Hızlı Teslimat</h3>
-              Ücretsiz kargo 📦! Ayrıca kargo firmalarına ertesi gün teslim
-              edilir.
+              <b>Ücretsiz kargo</b> 📦 Ayrıca kargo firmalarına ertesi gün
+              teslim edilir.
             </div>
           </div>
         </div>
@@ -56,7 +55,7 @@ export default async function Home() {
       <div className="custom-container text-amber-50">
         <h2>En Çok Satanlar</h2>
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-          {data.slice(0, 4).map((product: ProductInterface) => (
+          {data?.map((product: ProductInterface) => (
             <ProductCard
               product={product}
               key={product.id}
@@ -70,7 +69,7 @@ export default async function Home() {
 
       <div className="bg-amber-50 py-12 prose-headings:text-primary">
         <div className="custom-container flex justify-center">
-          <div className="grid w-10/12  text-center">
+          <article className="grid w-10/12  text-center">
             <h3>Urla Zeytin Çiftliği kimdir?</h3>
             <p>
               Urla Zeytin Çiftliği, 2000’lerin başında Urla’da kurulan bir aile
@@ -83,7 +82,7 @@ export default async function Home() {
               sizleri de ortak etmek için buradayız ve zeytinyağımızı denemeniz
               için sabırsızlanıyoruz!
             </p>
-          </div>
+          </article>
         </div>
       </div>
       <div className="py-12 text-amber-50">
