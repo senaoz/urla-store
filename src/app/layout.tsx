@@ -7,7 +7,17 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Urla Zeytin Çiftliği",
-  description: "Kimyasal İlaçlamasız - Doğal Zeytinyağı Üretimi",
+  icons: [
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "any",
+      url: "/favicon.ico",
+    },
+  ],
+  category: "Food & Drink",
+  description:
+    "Eşsiz lezzeti ile her türlü sebze ve et yemeklerinde, sıcak, soğuk salatalarda, sabah kahvaltılarında kullanabileceğiniz ve güvenle tüketebileceğiniz naturel sızma zeytinyağı üretiyoruz. Kimyasal ilaçlamasız paketler Urla'dan evlerinize gelmeye hazır!",
 };
 
 export default function RootLayout({
@@ -21,7 +31,8 @@ export default function RootLayout({
         <Navigation />
         {children}
         <div className="custom-container text-right text-amber-50">
-          urlaolivefarms@gmail.com - 0505 697 45 08
+          <a href="mailto:urlaolivefarms@gmail.com">urlaolivefarms@gmail.com</a>{" "}
+          - +90 505 697 45 08
         </div>
       </body>
     </html>
