@@ -48,7 +48,6 @@ export default async function Product({
           <div className="h-4" />
           {product.fields.InStock ? (
             <Link
-              className="button"
               href={
                 product.fields.Link
                   ? product.fields.Link
@@ -58,7 +57,7 @@ export default async function Product({
               }
               target={"_blank"}
             >
-              Satın Al
+              <div className="button text-center">Satın Al</div>
             </Link>
           ) : (
             <div className="button text-center">Stokta yok</div>
