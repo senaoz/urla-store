@@ -4,6 +4,8 @@ const nextConfig = {
     domains: [
       "localhost",
       "urlazeytinciftligi.com.tr",
+      "urlazeytinciftligi.com",
+      "urla-zeytin-ciftligi-senaoz.vercel.app",
       "v5.airtableusercontent.com",
     ],
   },
