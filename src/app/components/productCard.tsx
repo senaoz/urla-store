@@ -25,8 +25,8 @@ export const ProductCard = ({
     >
       <div className={`product-card__image relative`}>
         <Image
-          src={product.fields.Images[0].url}
-          alt={product.fields.Name}
+          src={product?.fields?.Images[0]?.url}
+          alt={product?.fields?.Name}
           width={300}
           height={300}
         />
