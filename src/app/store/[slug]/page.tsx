@@ -1,7 +1,6 @@
 import { loadProducts } from "@/utils/airtable";
 import { ProductInterface } from "@/interfaces";
 import Image from "next/image";
-import { ProductCard } from "@/app/components/productCard";
 import Link from "next/link";
 import Markdown from "react-markdown";
 import React from "react";
