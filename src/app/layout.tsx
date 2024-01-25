@@ -2,6 +2,8 @@ import "./globals.scss";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Navigation } from "@/app/components/nav";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,6 +36,8 @@ export default function RootLayout({
           <a href="mailto:urlaolivefarms@gmail.com">urlaolivefarms@gmail.com</a>{" "}
           - +90 505 697 45 08
         </div>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
