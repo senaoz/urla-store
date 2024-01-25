@@ -37,18 +37,19 @@ export default async function Home() {
       >
         <div className="grid grid-cols-3 gap-4 text-center">
           <div>
-            <h3>Doğal Ürünler</h3>
+            <h3>Doğal Ürünler 🌿</h3>
             İlaçlamasız tarım yöntemleri uyguluyor, sürdürebilir yaşam için her
             gün çabalıyoruz.
           </div>
           <div>
-            <h3>Güvenli Alışveriş</h3>
-            Ödemelerimizi PayTR aracılığı ile SLL koruması altında alıyoruz.
+            <h3>Güvenli Alışveriş 🔐</h3>
+            Ödemelerimizi PayTR üzerinden alıyoruz ve hiçbir şekilde kart
+            bilgisi tutmuyoruz.
           </div>
           <div>
-            <h3>Hızlı Teslimat</h3>
-            <b>Ücretsiz kargo</b> 📦 Ayrıca kargo firmalarına ertesi gün teslim
-            edilir.
+            <h3>Ücretsiz Kargo 📦</h3>
+            Siparişleriniz MNG Kargo ile 1-3 gün içerisinde teslim edilmek üzere
+            aynı gün kargoya verilir.
           </div>
         </div>
       </Section>
