@@ -39,16 +39,18 @@ export default async function Home() {
           <div>
             <h3>Doğal Ürünler</h3>
             İlaçlamasız tarım yöntemleri uyguluyor, sürdürebilir yaşam için her
-            gün çabalıyoruz.
+            gün çabalıyoruz 🌱
           </div>
           <div>
             <h3>Güvenli Alışveriş</h3>
-            Ödemelerimizi PayTR aracılığı ile SLL koruması altında alıyoruz.
+            Ödemelerimizi PayTR aracılığı alıyoruz ve 3D Secure ile
+            güvenliğinizi sağlıyoruz 🔒
           </div>
           <div>
             <h3>Hızlı Teslimat</h3>
-            <b>Ücretsiz kargo</b> 📦 Ayrıca kargo firmalarına ertesi gün teslim
-            edilir.
+            <b>Ücretsiz kargo</b> 📦
+            <br />
+            Aynı gün kargoya verilir, 1-3 gün içerisinde teslim edilir 🚚
           </div>
         </div>
       </Section>
