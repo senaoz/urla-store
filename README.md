@@ -1,4 +1,4 @@
-# [_"Urla Zeytin Çiftliği"_ Online Store](urlazeytinciftligi.com)
+## "Urla Zeytin Çiftliği" Online Store
 
 This is the official website for Urla Zeytin Çiftliği, an organic olive oil company. The website is built using Next.js, Tailwind CSS, and SCSS for styling. It provides information about the company, its products, and contact details.
 
@@ -9,7 +9,6 @@ This is the official website for Urla Zeytin Çiftliği, an organic olive oil co
 - Contact form for inquiries and orders.
 
 ## Technologies Used
-
+- Airtable API: Airtable for data management.
 - Next.js: A React framework for building server-rendered React applications.
 - Tailwind CSS with SCSS: A utility-first CSS framework for rapidly building custom designs.
-- Airtable API: Airtable for data management.
