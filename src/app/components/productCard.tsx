@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ProductInterface } from "@/interfaces";
+import { productImages, ProductInterface } from "@/interfaces";
 
 export const ProductCard = ({
   id,
@@ -25,7 +25,7 @@ export const ProductCard = ({
     >
       <div className={`product-card__image relative`}>
         <Image
-          src={product?.fields?.Images[0].url}
+          src={productImages[product.fields.Slug] || productImages["default"]}
           alt={product?.fields?.Name}
           width={300}
           height={300}
