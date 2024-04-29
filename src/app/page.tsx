@@ -3,6 +3,7 @@ import { loadProducts } from "@/utils/airtable";
 import { ProductInterface } from "@/interfaces";
 import Link from "next/link";
 import Section from "@/app/components/section";
+import Image from "next/image";
 
 export default async function Home() {
   const data = await loadProducts().then((data) => {
@@ -13,7 +14,14 @@ export default async function Home() {
     <>
       <div className="custom-container text-amber-50">
         <div className="flex flex-col items-center justify-center gap-4">
-          <img src={"/logo.svg"} width={450} alt={"logo"} />
+          <Image
+            src={"/logo.svg"}
+            width={450}
+            height={500}
+            alt={"logo"}
+            quality={100}
+            priority={true}
+          />
         </div>
         <div className="mt-12">
           <span className="text-3xl font-bold text-secondary">
@@ -35,7 +43,7 @@ export default async function Home() {
         sectionClassName="py-12 prose-headings:text-primary"
         backgroundColor="bg-amber-50"
       >
-        <div className="grid grid-cols-3 gap-4 text-center">
+        <div className="grid grid-cols-2 gap-4 text-center sm:grid-cols-3">
           <div>
             <h3>Doğal Ürünler 🌿</h3>
             İlaçlamasız tarım yöntemleri uyguluyor, sürdürebilir yaşam için her
@@ -46,7 +54,7 @@ export default async function Home() {
             Ödemelerimizi PayTR üzerinden alıyoruz ve hiçbir şekilde kart
             bilgisi tutmuyoruz.
           </div>
-          <div>
+          <div className={"col-span-2 sm:col-span-1"}>
             <h3>Hızlı Kargo 📦</h3>
             Siparişleriniz MNG Kargo ile 1-3 gün içerisinde teslim edilmek üzere
             aynı gün kargoya verilir. Kargo bedeli (35tl) ürün ödeme sayfasında
@@ -89,7 +97,7 @@ export default async function Home() {
       </Section>
       <Section
         sectionClassName="py-12 text-amber-50"
-        className="flex grid grid-cols-3 gap-6 text-center"
+        className="flex grid grid-cols-1 gap-6 text-center sm:grid-cols-3"
       >
         <div>
           <FiveStar />

@@ -32,9 +32,9 @@ export default function RootLayout({
       <body className={`${inter.className} typography min-h-screen bg-primary`}>
         <Navigation />
         {children}
-        <div className="custom-container text-right text-amber-50">
+        <div className="custom-container text-center text-amber-50 sm:text-right">
           <a href="mailto:urlaolivefarms@gmail.com">urlaolivefarms@gmail.com</a>{" "}
-          - +90 505 697 45 08
+          - <a href="tel:+905056974508">+90 505 697 45 08</a>
         </div>
         <Analytics />
         <SpeedInsights />
