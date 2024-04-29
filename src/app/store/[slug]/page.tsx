@@ -1,5 +1,5 @@
 import { loadProducts } from "@/utils/airtable";
-import { ProductInterface } from "@/interfaces";
+import { productImages, ProductInterface } from "@/interfaces";
 import Image from "next/image";
 import Link from "next/link";
 import Markdown from "react-markdown";
@@ -25,10 +25,18 @@ export default async function Product({
       <div className="block gap-8 md:grid md:grid-cols-2">
         <Image
           className="w-full shadow-xl"
-          src={product?.fields?.Images[0].url}
+          src={
+            productImages[product.fields.Slug] || product?.fields?.Images[0].url
+          }
           alt={product?.fields?.Name}
           width={500}
           height={500}
+          placeholder={"blur"}
+          blurDataURL={
+            productImages[product.fields.Slug] || product?.fields?.Images[0].url
+          }
+          quality={75}
+          priority={true}
         />
         <div className="prose-headings:my-2">
           <div className="h-4" />

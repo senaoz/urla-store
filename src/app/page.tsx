@@ -17,10 +17,11 @@ export default async function Home() {
           <Image
             src={"/logo.svg"}
             width={450}
-            height={500}
+            height={200}
             alt={"logo"}
-            quality={100}
+            quality={75}
             priority={true}
+            fill={false}
           />
         </div>
         <div className="mt-12">
