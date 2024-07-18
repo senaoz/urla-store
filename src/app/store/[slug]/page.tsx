@@ -53,7 +53,7 @@ export default async function Product({
           <Markdown>{product.fields.Description}</Markdown>
           <Markdown>{product.fields.Contents}</Markdown>
           <p className={"text-sm italic"}>
-            *Kargo bedeli (35 tl) ürün ödeme sayfasında eklenir.
+            *Kargo bedeli (50 tl) ürün ödeme sayfasında eklenir.
           </p>
           <div className="h-4" />
           {product.fields.InStock ? (

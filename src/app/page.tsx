@@ -58,7 +58,7 @@ export default async function Home() {
           <div className={"col-span-2 sm:col-span-1"}>
             <h3>Hızlı Kargo 📦</h3>
             Siparişleriniz MNG Kargo ile 1-3 gün içerisinde teslim edilmek üzere
-            aynı gün kargoya verilir. Kargo bedeli (35tl) ürün ödeme sayfasında
+            aynı gün kargoya verilir. Kargo bedeli (50tl) ürün ödeme sayfasında
             eklenir.
           </div>
         </div>
