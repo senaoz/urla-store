@@ -6,8 +6,8 @@ export interface ProductInterface {
     Type: string;
     Images: Image[];
     InStock: true;
-    Price: number;
-    SalePrice: number;
+    Price: string;
+    SalePrice: string;
     Description: string;
     Contents: string;
     Link: string;

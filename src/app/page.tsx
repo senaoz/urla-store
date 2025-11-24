@@ -1,17 +1,88 @@
 import { ProductCard } from "@/app/components/productCard";
-import { loadProducts } from "@/utils/airtable";
+import { loadProducts } from "@/utils/products";
 import { ProductInterface } from "@/interfaces";
 import Link from "next/link";
 import Section from "@/app/components/section";
 import Image from "next/image";
+import type { Metadata } from "next";
+import { t } from "@/utils/i18n";
+import tr from "@/locales/tr.json";
+
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://urlazeytinciftligi.com.tr";
+
+export const metadata: Metadata = {
+  title: tr.home.title,
+  description: tr.home.metaDescription,
+  openGraph: {
+    title: tr.home.ogTitle,
+    description: tr.home.ogDescription,
+    url: siteUrl,
+  },
+};
 
 export default async function Home() {
   const data = await loadProducts().then((data) => {
     return data.slice(0, 4);
   });
 
+  // Organization structured data
+  const organizationStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: t("common.siteName"),
+    url: siteUrl,
+    logo: `${siteUrl}/logo.svg`,
+    description:
+      "Doğal sızma zeytinyağı, yeşil zeytin, siyah zeytin ve organik ürünler üreten aile işletmesi.",
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+90-505-697-45-08",
+      contactType: "customer service",
+      email: "urlaolivefarms@gmail.com",
+    },
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Urla",
+      addressRegion: "İzmir",
+      addressCountry: "TR",
+    },
+    sameAs: [],
+  };
+
+  // LocalBusiness structured data
+  const localBusinessStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": `${siteUrl}#organization`,
+    name: t("common.siteName"),
+    image: `${siteUrl}/logo.svg`,
+    description:
+      "2000'lerin başında Urla'da kurulan aile işletmesi. Doğal koşullarda yetiştirilen zeytinlerden soğuk sıkım zeytinyağı üretimi.",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Urla",
+      addressRegion: "İzmir",
+      addressCountry: "TR",
+    },
+    telephone: "+90-505-697-45-08",
+    email: "urlaolivefarms@gmail.com",
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(organizationStructuredData),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(localBusinessStructuredData),
+        }}
+      />
       <div className="custom-container text-amber-50">
         <div className="flex flex-col items-center justify-center gap-4">
           <Image
@@ -26,16 +97,12 @@ export default async function Home() {
         </div>
         <div className="mt-12">
           <span className="text-3xl font-bold text-secondary">
-            Zeytinyağlarımız
+            {t("home.ourOils")}
           </span>
-          <p>
-            Eşsiz lezzeti ile her türlü sebze ve et yemeklerinde, sıcak, soğuk
-            salatalarda, sabah kahvaltılarında kullanabileceğiniz ve güvenle
-            tüketebileceğiniz naturel sızma zeytinyağları üretiyoruz.
-          </p>
+          <p>{t("home.ourOilsDescription")}</p>
           <div className="h-4" />
           <Link href={"/store"} className="button">
-            Tüm Ürünler
+            {t("home.allProducts")}
           </Link>
           <div className="h-4" />
         </div>
@@ -46,25 +113,21 @@ export default async function Home() {
       >
         <div className="grid grid-cols-2 gap-4 text-center sm:grid-cols-3">
           <div>
-            <h3>Doğal Ürünler 🌿</h3>
-            İlaçlamasız tarım yöntemleri uyguluyor, sürdürebilir yaşam için her
-            gün çabalıyoruz.
+            <h3>{t("home.naturalProducts.title")}</h3>
+            {t("home.naturalProducts.description")}
           </div>
           <div>
-            <h3>Güvenli Alışveriş 🔐</h3>
-            Ödemelerimizi PayTR üzerinden alıyoruz ve hiçbir şekilde kart
-            bilgisi tutmuyoruz.
+            <h3>{t("home.secureShopping.title")}</h3>
+            {t("home.secureShopping.description")}
           </div>
           <div className={"col-span-2 sm:col-span-1"}>
-            <h3>Hızlı Kargo 📦</h3>
-            Siparişleriniz MNG Kargo ile 1-3 gün içerisinde teslim edilmek üzere
-            aynı gün kargoya verilir. Kargo bedeli (50tl) ürün ödeme sayfasında
-            eklenir.
+            <h3>{t("home.fastShipping.title")}</h3>
+            {t("home.fastShipping.description")}
           </div>
         </div>
       </Section>
       <Section sectionClassName="pb-8">
-        <h2>En Çok Satanlar</h2>
+        <h2>{t("home.bestsellers")}</h2>
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
           {data?.map((product: ProductInterface) => (
             <ProductCard
@@ -82,47 +145,26 @@ export default async function Home() {
         className="flex justify-center"
       >
         <article className="grid w-10/12  text-center">
-          <h3>Urla Zeytin Çiftliği kimdir?</h3>
-          <p>
-            Urla Zeytin Çiftliği, 2000’lerin başında Urla’da kurulan bir aile
-            kuruluşudur. 3. nesil olarak, ağaçlarımızı doğal koşullarda
-            yetiştirip lezzetli ve doğal zeytinyağı üretmeye devam ediyoruz.
-          </p>
-          <p>
-            Pazarlama anlayışımıza yeni bir soluk getirerek, müşterilerimizin
-            sağlıklı yaşamlarına katkıda bulunmayı hedefliyoruz. Heyecanla
-            sizleri de ortak etmek için buradayız ve zeytinyağımızı denemeniz
-            için sabırsızlanıyoruz!
-          </p>
+          <h3>{t("home.aboutUs.title")}</h3>
+          <p>{t("home.aboutUs.description1")}</p>
+          <p>{t("home.aboutUs.description2")}</p>
         </article>
       </Section>
       <Section
         sectionClassName="py-12 text-amber-50"
-        className="flex grid grid-cols-1 gap-6 text-center sm:grid-cols-3"
+        className="grid grid-cols-1 gap-6 text-center sm:grid-cols-3"
       >
         <div>
           <FiveStar />
-          <p>
-            Önceden yediğimiz yağlara hiç benzemiyor. Sizin yağınız tazelik
-            kokuyor. Çoçuklar bile farkını hissetti. Özellikle salatalarda
-            efsane oluyor. İlginiz için teşekkürler.
-          </p>
+          <p>{t("home.testimonials.0.text")}</p>
         </div>
         <div>
           <FiveStar />
-          <p>
-            İlk defa bu kadar güzel bir zeytinyağı aldım. Çok teşekkürler.
-            Zeytinyağı konusunda tecrübeli biri olarak kokusu tadi enfesti ve
-            asit orani gerçekten harika. Yakıcılığı orta derecede diyebilirim.
-          </p>
+          <p>{t("home.testimonials.1.text")}</p>
         </div>
         <div>
           <FiveStar />
-          <p>
-            Bu yıl tam 8 adet aldık, ailecek çok memnunuz. Arkadaşlarla beraber
-            yıllardır Betül hanımdan alıyoruz. Başka yağları tüketemez olduk,
-            salata, pasta, börek, tüm yemeklerimde kullanıyorum.
-          </p>
+          <p>{t("home.testimonials.2.text")}</p>
         </div>
       </Section>
     </>

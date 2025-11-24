@@ -1,8 +1,9 @@
 "use client";
 
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+import { t } from "@/utils/i18n";
 
 interface LinkInterface {
   name: string;
@@ -11,14 +12,14 @@ interface LinkInterface {
 
 export function Navigation() {
   const pathname = usePathname();
-
+  const router = useRouter();
   let links: LinkInterface[] = [
     {
-      name: "Ana Sayfa",
+      name: t("nav.home"),
       path: "/",
     },
     {
-      name: "Tüm Ürünler",
+      name: t("nav.allProducts"),
       path: "/store",
     },
   ];
@@ -29,7 +30,8 @@ export function Navigation() {
         src={"/logo.svg"}
         width={120}
         height={200}
-        alt={"Urla Zeytin Ciftiligi"}
+        onClick={() => router.push("/")}
+        alt={t("common.logoAlt")}
       />
       <div className="grow"></div>
 

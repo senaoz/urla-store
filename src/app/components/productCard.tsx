@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { productImages, ProductInterface } from "@/interfaces";
+import { t } from "@/utils/i18n";
 
 export const ProductCard = ({
   id,
@@ -32,7 +33,7 @@ export const ProductCard = ({
         />
         {!product.fields.InStock && (
           <span className="absolute bottom-4 left-4 text-lg font-bold text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Tükendi
+            {t("productCard.outOfStock")}
           </span>
         )}
       </div>

@@ -19,11 +19,15 @@
     "react-markdown": "^9.0.0",
     "sharp": "^0.32.6"
   },
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=10.0.0"
+  },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/typography": "^0.5.10",
-    "@types/node": "^20",
-    "@types/react": "^18",
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.27",
     "@types/react-dom": "^18",
     "autoprefixer": "^10",
     "encoding": "^0.1.13",
@@ -34,6 +38,7 @@
     "prettier-plugin-tailwindcss": "^0.5.6",
     "sass": "^1.69.3",
     "tailwindcss": "^3",
-    "typescript": "^5"
-  }
+    "typescript": "^5.9.3"
+  },
+  "packageManager": "pnpm@10.23.0+sha512.21c4e5698002ade97e4efe8b8b4a89a8de3c85a37919f957e7a0f30f38fbc5bbdd05980ffe29179b2fb6e6e691242e098d945d1601772cad0fef5fb6411e2a4b"
 }
