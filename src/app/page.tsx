@@ -96,7 +96,7 @@ export default async function Home() {
           />
         </div>
         <div className="mt-12">
-          <span className="text-3xl font-bold text-secondary">
+          <span className="text-2xl font-bold text-secondary">
             {t("home.ourOils")}
           </span>
           <p>{t("home.ourOilsDescription")}</p>
@@ -111,7 +111,7 @@ export default async function Home() {
         sectionClassName="py-12 prose-headings:text-primary"
         backgroundColor="bg-amber-50"
       >
-        <div className="grid grid-cols-2 gap-4 text-center sm:grid-cols-3">
+        <div className="grid gap-4 text-center sm:grid-cols-3">
           <div>
             <h3>{t("home.naturalProducts.title")}</h3>
             {t("home.naturalProducts.description")}
@@ -120,14 +120,14 @@ export default async function Home() {
             <h3>{t("home.secureShopping.title")}</h3>
             {t("home.secureShopping.description")}
           </div>
-          <div className={"col-span-2 sm:col-span-1"}>
+          <div>
             <h3>{t("home.fastShipping.title")}</h3>
             {t("home.fastShipping.description")}
           </div>
         </div>
       </Section>
       <Section sectionClassName="pb-8">
-        <h2>{t("home.bestsellers")}</h2>
+        <h3>{t("home.bestsellers")}</h3>
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
           {data?.map((product: ProductInterface) => (
             <ProductCard
@@ -144,8 +144,8 @@ export default async function Home() {
         backgroundColor="bg-amber-50"
         className="flex justify-center"
       >
-        <article className="grid w-10/12  text-center">
-          <h3>{t("home.aboutUs.title")}</h3>
+        <article className="grid text-center">
+          <h2 className="m-0!">{t("home.aboutUs.title")}</h2>
           <p>{t("home.aboutUs.description1")}</p>
           <p>{t("home.aboutUs.description2")}</p>
         </article>

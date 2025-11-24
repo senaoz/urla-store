@@ -15,10 +15,6 @@ export function Navigation() {
   const router = useRouter();
   let links: LinkInterface[] = [
     {
-      name: t("nav.home"),
-      path: "/",
-    },
-    {
       name: t("nav.allProducts"),
       path: "/store",
     },

@@ -39,14 +39,16 @@ export const ProductCard = ({
       </div>
 
       <div className={`product-card__content ${contentClassName}`}>
-        <h4>
+        <h4 className="grid">
           {product.fields.Name}
-          {product.fields.Size === "Standart"
-            ? null
-            : ` - ${product.fields.Size}`}
+          <div className="italic opacity-70">
+            {product.fields.Size === "Standart"
+              ? null
+              : `${product.fields.Size}`}
+          </div>
         </h4>
         <div className="product-card__price">
-          <span className="product-card__price__old">
+          <span className="product-card__price__old hidden sm:block">
             {product.fields.Price}
           </span>
           <span className="product-card__price__sale">

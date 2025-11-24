@@ -226,7 +226,12 @@ export default async function Product({
             <span className="rounded-full bg-secondary px-3 py-1.5 text-lg font-bold text-primary">
               {product.fields.Size}
             </span>
-            <h2>{product.fields.Name}</h2>
+            <h2>
+              {product.fields.Name}{" "}
+              {product.fields.Size !== "Standart"
+                ? ` - ${product.fields.Size}`
+                : ""}
+            </h2>
             <div className="product-card__price">
               <h3 className="product-card__price__old">
                 {product.fields.Price}
