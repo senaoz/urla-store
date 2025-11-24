@@ -20,8 +20,7 @@
     "sharp": "^0.32.6"
   },
   "engines": {
-    "node": "22.x",
-    "pnpm": ">=10.0.0"
+    "node": "22.x"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",

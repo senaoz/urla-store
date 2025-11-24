@@ -1,4 +1,4 @@
 {
-  "installCommand": "npm install -g pnpm@10.23.0 && pnpm install --no-frozen-lockfile"
+  "installCommand": "corepack enable && pnpm install --no-frozen-lockfile"
 }
 
