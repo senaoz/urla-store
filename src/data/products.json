@@ -8,45 +8,14 @@
       "Images": [
         {
           "id": "5l-1",
-          "url": "https://v5.airtableusercontent.com/v3/u/47/47/1763992800000/vhC55WqJK9upawiNLylBSQ/GJnrECrhalwqog8cey7Ru9AjUwfqZ8poraBCsZZ_Ud6PU0OF6H23YT2_c2gYxuTaWUgcMKTmI0fx7GSTWtj-2uwdMIEbU6Fp86e89q5TjQHT3dZk95p2o3laATNwn_Yv2NtHuXh-G7Kbm8SnEvNoFg/8VN6oL6M4-OW8Sv563bZPQJHvSLf40oORJfI8iSC4nA",
-          "filename": "5L-3.jpg",
-          "width": 0,
-          "height": 0,
-          "size": 0,
-          "type": "image/jpeg",
-          "thumbnails": {
-            "small": { "url": "", "width": 0, "height": 0 },
-            "large": { "url": "", "width": 0, "height": 0 },
-            "full": { "url": "", "width": 0, "height": 0 }
-          }
+          "filename": "5L-1.jpg",
+          "type": "image/jpeg"
         },
         {
           "id": "5l-2",
           "url": "https://v5.airtableusercontent.com/v3/u/47/47/1763992800000/tSF27c0OuDrruAL9ifJxbg/LqbxfGw42qCffp_AX-YPZ-Dv6-65pIZy3B_iJ5xRQuldEy6K-WN3qAUfFaC0Iwe-wSzmQUQaNatperM9G7NbfC0EcR1zjTXWQssgNOuiDa42OoGSqvx1eNbA9tY19Fy16ke9yoQ-YPHDIKz6unfuKw/9z3ZeIRv3rhvhSmfap7o0LlAgHkrvnyuOxE8vtGuWGA",
           "filename": "5L-2.jpg",
-          "width": 0,
-          "height": 0,
-          "size": 0,
-          "type": "image/jpeg",
-          "thumbnails": {
-            "small": { "url": "", "width": 0, "height": 0 },
-            "large": { "url": "", "width": 0, "height": 0 },
-            "full": { "url": "", "width": 0, "height": 0 }
-          }
-        },
-        {
-          "id": "5l-3",
-          "url": "https://v5.airtableusercontent.com/v3/u/47/47/1763992800000/iT8Guat8OI3aIlahKhMETg/NOaHoBMlOhtZYasNcprBxvHV5MstQvZjgFSNJXtB0E0F2w7Skhl8QPpmglKhmVqX2_VugVDpXX045qlNBIEt2t8yBBLPulGCPDOrSaaSfThqt3wzKbfGR8ZWrmbcA5wnfF76AthNY91TaooXUX9ZgQ/7D7VP9ojoc3Iog0tDJVBTluk2R_IcFj7PCQE_zRwxdI",
-          "filename": "5L-1.jpg",
-          "width": 0,
-          "height": 0,
-          "size": 0,
-          "type": "image/jpeg",
-          "thumbnails": {
-            "small": { "url": "", "width": 0, "height": 0 },
-            "large": { "url": "", "width": 0, "height": 0 },
-            "full": { "url": "", "width": 0, "height": 0 }
-          }
+          "type": "image/jpeg"
         }
       ],
       "InStock": true,
@@ -68,30 +37,14 @@
         {
           "id": "3l-1",
           "url": "https://v5.airtableusercontent.com/v3/u/47/47/1763992800000/QftM0dvA3WDI9whMw51rng/EJprS8FavXELU-jZsRNQjvtKtSc0jUcr6eYANf_P3-pFTEAxwFmoOVXiwvjfwA57rkU7oqHS6STwRxY4kkw7I-bKnL_cZtLqdf7TK6Ar1HlE8_UkyhNUfRDHrI8IS_9BZmOYlIQ1sQVzYcUiBsk3PA/U1oPF_1896XJnR6YhtVeXUP2rKHtk2RYHIhHI1M3Yis",
-          "filename": "3L-2.jpg",
-          "width": 0,
-          "height": 0,
-          "size": 0,
-          "type": "image/jpeg",
-          "thumbnails": {
-            "small": { "url": "", "width": 0, "height": 0 },
-            "large": { "url": "", "width": 0, "height": 0 },
-            "full": { "url": "", "width": 0, "height": 0 }
-          }
+          "filename": "3l-1.jpg",
+          "type": "image/jpeg"
         },
         {
           "id": "3l-2",
           "url": "https://v5.airtableusercontent.com/v3/u/47/47/1763992800000/VtfP_-g1j4oCZyYxwzs9Tg/VAQyTnvdxEmyDiMsCr-PpxMqJvX2R64dUDEKPQzp1dyZ4Z0oMfQePKksb9W4f971gfOMIl7E_VY8cVdlcMa36zmdqHDMqtBg6XCw3xKjsGCv-k6O_wKXMAPEbDxLptkwxhZxdkjHwcVWWomHndOMoQ/Qte9NIrRLh_nic6W0-sLSoRyZmk5WH4f44CW8c9G3WQ",
-          "filename": "3.png",
-          "width": 0,
-          "height": 0,
-          "size": 0,
-          "type": "image/png",
-          "thumbnails": {
-            "small": { "url": "", "width": 0, "height": 0 },
-            "large": { "url": "", "width": 0, "height": 0 },
-            "full": { "url": "", "width": 0, "height": 0 }
-          }
+          "filename": "3l-2.jpg",
+          "type": "image/png"
         }
       ],
       "InStock": true,
@@ -113,58 +66,8 @@
         {
           "id": "zeytin-500gr-1",
           "url": "https://v5.airtableusercontent.com/v3/u/47/47/1763992800000/cjdqPWelsqWBuFxqz2dNHQ/TF58tPS7GuY2m8mDLrRNVjq_cC5ZowVfjcc2vIKRfXjodT6hfAg8u_SS7av7AWcITcWugsJeohDIKXvySiMc6fdyDFoVqTTSgvtnyHdnGW1SzBASSOy8GVHkN6awMDs7GuayCk4BRRA4qSyZ1j6a5RBIDNyw1_EpRi6ayX-sPYi_9AwGxADb6VnMqhz5aiO0/Kc0TGeaHg7KQoWGphHxZxu6MR5bmPjdWQYbntK63QFQ",
-          "filename": "trendyol-urla-yesil-zeytin-6-e1633681977433.jpg",
-          "width": 0,
-          "height": 0,
-          "size": 0,
-          "type": "image/jpeg",
-          "thumbnails": {
-            "small": { "url": "", "width": 0, "height": 0 },
-            "large": { "url": "", "width": 0, "height": 0 },
-            "full": { "url": "", "width": 0, "height": 0 }
-          }
-        },
-        {
-          "id": "zeytin-500gr-2",
-          "url": "https://v5.airtableusercontent.com/v3/u/47/47/1763992800000/UlcU_P4AF4NaqYEmIcScCQ/sXBGhddZ8_3L-Lpb6HSeSv-mYmKg_5kw0VqN1kZTQZHfPQrQ4LzdRxMLykUh8nbIdtVDAixTGgpuTZTLLx4Jp4dclCEZHfg4cGT1EDPomsBW12FzqSaLdSie5_JyBwpNosVKoZPFiR5eV8pNk5P60brEfUwn0yd4VsJ2lu3NIR4/gSCnVLco2B0XK_UrS4Nmv3OZt75_HmZ-wTWZV63RRwQ",
-          "filename": "trendyol-urla-yesil-zeytin-3.jpg",
-          "width": 0,
-          "height": 0,
-          "size": 0,
-          "type": "image/jpeg",
-          "thumbnails": {
-            "small": { "url": "", "width": 0, "height": 0 },
-            "large": { "url": "", "width": 0, "height": 0 },
-            "full": { "url": "", "width": 0, "height": 0 }
-          }
-        },
-        {
-          "id": "zeytin-500gr-3",
-          "url": "https://v5.airtableusercontent.com/v3/u/47/47/1763992800000/LF0UP8gaOHMJThphHZ8V9A/sc2OW9y6fD6XJPXi32hLvexLP5DceAlVOdzKUkL-WTc977ItO7_27baJC-gHH9_esHxdGhU_-PficqshJ-ST2Cfpz4yUhNtL76UF4xYk155wQ1GXy1bRn0HLdSLrpbmb7r6K5c7X5c13JFJRoMNtIiiAIIfyWKmaLS1Dpt52tFw/euoHDPKb4kvKtdDjxL1S2Mfq6DgbQvH4AF3q1RfdAgI",
-          "filename": "trendyol-urla-yesil-zeytin-5.jpg",
-          "width": 0,
-          "height": 0,
-          "size": 0,
-          "type": "image/jpeg",
-          "thumbnails": {
-            "small": { "url": "", "width": 0, "height": 0 },
-            "large": { "url": "", "width": 0, "height": 0 },
-            "full": { "url": "", "width": 0, "height": 0 }
-          }
-        },
-        {
-          "id": "zeytin-500gr-4",
-          "url": "https://v5.airtableusercontent.com/v3/u/47/47/1763992800000/NRXg2fP8hNrmwgzoyNjiUg/NWotyLCZpEBj7WmNjoU-lpEfGSiarUc-XZupDXvNZfohJLV2ZF027SIL0xdZwRXOYS_rI4WC_SeBkjEbK2iAx4GBM2zVPIP7maY29JTCwj-ke-nAQBdYsxN-4J4juz84ySECRzD6cNdl2gkk2L9nUm3F_aSYjOV6hiWPhyDnKQVM2qy7Vo1rkkPEUXE_Ds6L/G4DFwZ0w1xwm8or6h7uf5cCGXFE7_102mhR9uiyXJZY",
-          "filename": "IMG_2962_Original-scaled-e1633530602334.jpg",
-          "width": 0,
-          "height": 0,
-          "size": 0,
-          "type": "image/jpeg",
-          "thumbnails": {
-            "small": { "url": "", "width": 0, "height": 0 },
-            "large": { "url": "", "width": 0, "height": 0 },
-            "full": { "url": "", "width": 0, "height": 0 }
-          }
+          "filename": "zeytin-500gr-1.jpg",
+          "type": "image/jpeg"
         }
       ],
       "InStock": false,
@@ -177,37 +80,6 @@
     }
   },
   {
-    "id": "zeytin-1kg",
-    "fields": {
-      "Name": "Kuru Sele Siyah Zeytin",
-      "Size": "1 kg",
-      "Type": "Zeytin",
-      "Images": [
-        {
-          "id": "zeytin-1kg-1",
-          "url": "https://v5.airtableusercontent.com/v3/u/47/47/1763992800000/wknioQL3I6-Xnjovb7SeWg/VghrECnfXAo6qGlBYwLazWKB-nGfEU3xA3xBxXwLmxmTMpiRgpWft1dydPHUzDaKAtGKdwZJwu21xj5ip82ns8Mxg3IJz18sW56MY7835PUEhAKWHlgvHNHO0uqmnos10WEMFwBS0nUYPG-D2rVC0g/YTLi-OHND3Sf5tTm94EsqzzqcjVoZKk2yqRRPVoFKdE",
-          "filename": "kare-zeytin-1.gif",
-          "width": 0,
-          "height": 0,
-          "size": 0,
-          "type": "image/gif",
-          "thumbnails": {
-            "small": { "url": "", "width": 0, "height": 0 },
-            "large": { "url": "", "width": 0, "height": 0 },
-            "full": { "url": "", "width": 0, "height": 0 }
-          }
-        }
-      ],
-      "InStock": false,
-      "Price": "175.00",
-      "SalePrice": "150.00",
-      "Description": "**Koruyucu ve katkı maddesi içermez.** Bu sayede zeytinin acılıgındaki polifenoller ile doğal antioksidanları almanıza olanak sağlar. Kimyasal ilaçlamasız tarım yöntemleri ile üretilen zeytinlerden Urla-İzmir'de hazırlanmıştır.",
-      "Contents": "",
-      "Link": "",
-      "Slug": "zeytin-1kg"
-    }
-  },
-  {
     "id": "1l",
     "fields": {
       "Name": "Naturel Sızma Zeytinyağı",
@@ -217,30 +89,8 @@
         {
           "id": "1l-1",
           "url": "https://v5.airtableusercontent.com/v3/u/47/47/1763992800000/b_flypfkdZTKiiuYrBTh6w/Wpfvf9AqrjRqBpFJwgnx73Yb-D36KL46UxxZuJUT1qSNS7C6HV2WCXuCI7QiXbbpURnOmxX9UOZL1IAsH1SYkQwX7jvDdL09Ye9pa9MbEDib9CjUpBd1gK7W9cdrMDp2AdK9oaZ1y2b8v-5nctys4A/eEyTNddMrfsyzllxWwQnEBrmJB_IY50TGrvhjDqCVIY",
-          "filename": "1L-2.jpg",
-          "width": 0,
-          "height": 0,
-          "size": 0,
-          "type": "image/jpeg",
-          "thumbnails": {
-            "small": { "url": "", "width": 0, "height": 0 },
-            "large": { "url": "", "width": 0, "height": 0 },
-            "full": { "url": "", "width": 0, "height": 0 }
-          }
-        },
-        {
-          "id": "1l-2",
-          "url": "https://v5.airtableusercontent.com/v3/u/47/47/1763992800000/sa8nTTCRt90tq4sI_fpV3g/apnsXgMlNWlAxxOwDuyvtDREN7RW4DTuV_TW9XfQ0D6RlZ9pIljoXC4twFRX3-RKyia3lf3i8sd91WE4sJO-NNYvEcXPPjSB42H_JpS9giY_g0Q_wc33sm3CNJDsfD37_Pde7nu8E3qqzsS8IHgBLw/ebAtDHIOFTb6XWj3nQRVDa10jUT_kEe6N8Ps8f8jy8E",
-          "filename": "1L.jpg",
-          "width": 0,
-          "height": 0,
-          "size": 0,
-          "type": "image/jpeg",
-          "thumbnails": {
-            "small": { "url": "", "width": 0, "height": 0 },
-            "large": { "url": "", "width": 0, "height": 0 },
-            "full": { "url": "", "width": 0, "height": 0 }
-          }
+          "filename": "1l-1.jpg",
+          "type": "image/jpeg"
         }
       ],
       "InStock": false,
@@ -262,44 +112,8 @@
         {
           "id": "250ml-1",
           "url": "https://v5.airtableusercontent.com/v3/u/47/47/1763992800000/-xQkYXfa1mhR2fJflCxaLQ/AGNJ5Yeqjb6W9uGUXggNtOfSiDHY_R--4qFNktewtYvTtgoNn1cdDLbSbkWK2s5EV-PQAFZnupwV-ca1goOtBZZpeLaW7zwME_bh68weMfOv-I-VVQa6FBBL8soguNveSHoJ7tWaql2H9XVzsGeYMA/WScS5Zdn0cFDaoz8kEXyyIB7o6InVUrXIc_vLUa5HVY",
-          "filename": "250ML-3.jpg",
-          "width": 0,
-          "height": 0,
-          "size": 0,
-          "type": "image/jpeg",
-          "thumbnails": {
-            "small": { "url": "", "width": 0, "height": 0 },
-            "large": { "url": "", "width": 0, "height": 0 },
-            "full": { "url": "", "width": 0, "height": 0 }
-          }
-        },
-        {
-          "id": "250ml-2",
-          "url": "https://v5.airtableusercontent.com/v3/u/47/47/1763992800000/5i2j3x7Ou8CzuNvumOxhTA/xgBzkhoYUPhcn3IvFy9jNQyZqFXaOyZPROTPQ5XGsD9YgJYJJ80MLs8CpWdQvXw9ahG4ai4HmUApkCEsL5muXRYkwBRY1TIgWFOVnTrLM7Nwok0INYrlaAeEWFw5pWlvwVih-w1nKwIQw4dKgDM1_g/er9-PbYmpJclDQRUYCqacW3t1nuBPDIbK11Xb-BIoW4",
-          "filename": "250ML-1.jpg",
-          "width": 0,
-          "height": 0,
-          "size": 0,
-          "type": "image/jpeg",
-          "thumbnails": {
-            "small": { "url": "", "width": 0, "height": 0 },
-            "large": { "url": "", "width": 0, "height": 0 },
-            "full": { "url": "", "width": 0, "height": 0 }
-          }
-        },
-        {
-          "id": "250ml-3",
-          "url": "https://v5.airtableusercontent.com/v3/u/47/47/1763992800000/TWsqdyteol71sZkHCE3qFQ/hYphbgETDheKm-T10Vu8pm9upfoqazaKVw6zxo7TmCp4-RiN9482SqNaLs7xib6Lu9e6j-t2odgkbInYfWPuUTz781x43kwtUkx-6v8x40gHPGk74RMMZLd5EBhO5VF7ZsbKyvsclmhtwOFvgoc6Og/4aWCOhgIVNfV7x-qr5xSeQ3u2kVanx--KOB1DoXUUuk",
-          "filename": "250ML-2.jpg",
-          "width": 0,
-          "height": 0,
-          "size": 0,
-          "type": "image/jpeg",
-          "thumbnails": {
-            "small": { "url": "", "width": 0, "height": 0 },
-            "large": { "url": "", "width": 0, "height": 0 },
-            "full": { "url": "", "width": 0, "height": 0 }
-          }
+          "filename": "250ml-1.jpg",
+          "type": "image/jpeg"
         }
       ],
       "InStock": false,
@@ -321,30 +135,8 @@
         {
           "id": "tanisma-1",
           "url": "https://v5.airtableusercontent.com/v3/u/47/47/1763992800000/LOI8BAC0Kbr5idu6N7Hx5g/DepnX6vtWTAEyJZ34mLytQsDbfMgxXlWyr5E3gazF60uWAb1U4r3l3hz0ubZG_Yt-TJma19ixD03_7MTmmMykhCOxqDh5WA_t2Ulgt5KiJx4VTJmS8p8OwKOq-NOqCLCocI9ftCJcWalN8mGO2Q6Fg/siezKsOY5L6MDj1izNo_jSJ-SYxaKtQW0EldpOqCkmo",
-          "filename": "IMG_1424.jpg",
-          "width": 0,
-          "height": 0,
-          "size": 0,
-          "type": "image/jpeg",
-          "thumbnails": {
-            "small": { "url": "", "width": 0, "height": 0 },
-            "large": { "url": "", "width": 0, "height": 0 },
-            "full": { "url": "", "width": 0, "height": 0 }
-          }
-        },
-        {
-          "id": "tanisma-2",
-          "url": "https://v5.airtableusercontent.com/v3/u/47/47/1763992800000/bWb2alBby8CQ8i7TtqTXcQ/_WvI6cPIgnvkjdKubyhzMktcffSc4IqjcoV3zLAstGy-12EGSTbbbngTROwFe9LOm21nyh-H00f5-oQT6veJ0kOVOvMDyWXdKjO9fMLblEmWFr-1PuQewJfW9UhS_EB3LQDFnkDYNnLn_1ipL-AfUQ/aPdGWVDbn3lWY2vs8wP3Kukp3TTRE2XxHluy5myfKfw",
-          "filename": "set2.jpg",
-          "width": 0,
-          "height": 0,
-          "size": 0,
-          "type": "image/jpeg",
-          "thumbnails": {
-            "small": { "url": "", "width": 0, "height": 0 },
-            "large": { "url": "", "width": 0, "height": 0 },
-            "full": { "url": "", "width": 0, "height": 0 }
-          }
+          "filename": "tanisma-1.jpg",
+          "type": "image/jpeg"
         }
       ],
       "InStock": false,
@@ -366,16 +158,14 @@
         {
           "id": "ihlamur-1",
           "url": "https://v5.airtableusercontent.com/v3/u/47/47/1763992800000/yZqQwokRE-0vIwtCeRJxIQ/EflbPqfTQzLp3g_uk3GSPqK5HiPS5OLvazj3LmRlpJaFs1SwbKqg396A0e85PjsigoHtZtiySdC3zTMKsVR5jOm4FKkjFqLRoCq-iwM7IFCc2vPs0jfUyB2uetCDAGkvjbhoIimrwffqCxGxD0zmug/CglVHcGAqM5fQZaXO8ObP9Jbt34-hcWz-mlcAIVmyMA",
-          "filename": "Adsiz_Resim-2.jpg",
-          "width": 0,
-          "height": 0,
-          "size": 0,
-          "type": "image/jpeg",
-          "thumbnails": {
-            "small": { "url": "", "width": 0, "height": 0 },
-            "large": { "url": "", "width": 0, "height": 0 },
-            "full": { "url": "", "width": 0, "height": 0 }
-          }
+          "filename": "ihlamur-2.jpg",
+          "type": "image/jpeg"
+        },
+        {
+          "id": "ihlamur-2",
+          "url": "https://v5.airtableusercontent.com/v3/u/47/47/1763992800000/yZqQwokRE-0vIwtCeRJxIQ/EflbPqfTQzLp3g_uk3GSPqK5HiPS5OLvazj3LmRlpJaFs1SwbKqg396A0e85PjsigoHtZtiySdC3zTMKsVR5jOm4FKkjFqLRoCq-iwM7IFCc2vPs0jfUyB2uetCDAGkvjbhoIimrwffqCxGxD0zmug/CglVHcGAqM5fQZaXO8ObP9Jbt34-hcWz-mlcAIVmyMA",
+          "filename": "ihlamur-1.jpg",
+          "type": "image/jpeg"
         }
       ],
       "InStock": false,
@@ -397,44 +187,20 @@
         {
           "id": "ezme-1",
           "url": "https://v5.airtableusercontent.com/v3/u/47/47/1763992800000/usNZd4EwCk2J9f_cFARGOA/c7BAKvjJSA4WXQTqeHYzH61OSiJn3oxgXAdRg7g7nvHkpZXrilnXQnqHHghIDscVbgDMsfdlxn9QcyJ60qVMk_mn4BAp8udOMoUPKRNKzxn_Cm3vCZBOjeFqfH74QwbbD07TO94e1BXsgRMOMKOWwA/bcC8n63B7_8-30oRnpSb00qE5PDPlX3VuXFORt3dnsU",
-          "filename": "ezme-2.png",
-          "width": 0,
-          "height": 0,
-          "size": 0,
-          "type": "image/png",
-          "thumbnails": {
-            "small": { "url": "", "width": 0, "height": 0 },
-            "large": { "url": "", "width": 0, "height": 0 },
-            "full": { "url": "", "width": 0, "height": 0 }
-          }
+          "filename": "ezme-1.jpg",
+          "type": "image/jpeg"
         },
         {
           "id": "ezme-2",
           "url": "https://v5.airtableusercontent.com/v3/u/47/47/1763992800000/HOOQEGXW6pJYWB92LbJrPg/N2sW5uTz6KoSfEa9m2BqkP0qj_9rW_YMA637bJUbcnhxhM3TwREa4W0Gntc2vLCnLWsAEC9TH7Jwk0j2DLZLI1ullYHHCjrFYynG4hsG80SUZP2DKm5U-tf4AVGbF9AWJCHXDANAAwhw1mD3gu0Cdw/7AXGCigkSlMw82Aa84cZ-5PM6VXqV2CGJ43_Mq3QEcc",
-          "filename": "IMG_5009-scaled.jpg",
-          "width": 0,
-          "height": 0,
-          "size": 0,
-          "type": "image/jpeg",
-          "thumbnails": {
-            "small": { "url": "", "width": 0, "height": 0 },
-            "large": { "url": "", "width": 0, "height": 0 },
-            "full": { "url": "", "width": 0, "height": 0 }
-          }
+          "filename": "ezme-2.jpg",
+          "type": "image/jpeg"
         },
         {
           "id": "ezme-3",
           "url": "https://v5.airtableusercontent.com/v3/u/47/47/1763992800000/N42rdVqhzyF5f_7J9WHf2A/Rfg4hI1dhowvWimzggbdLdMH1iwFFu9x6QzALkmJ5fkeM4j0ZINnRoqnGtwiI0CXRu5LLbdMD40N02QDnpCxIsTVxRnBdhvX_QY130kKItlRtEin-thSQ3lig5W5XsTvIAev6b9fXel-d67ATppxvg/DoZEYPWTeG4H1ctAkRWu0y1G7u4M13vaPyvX-Fl6tjc",
-          "filename": "ezme.png",
-          "width": 0,
-          "height": 0,
-          "size": 0,
-          "type": "image/png",
-          "thumbnails": {
-            "small": { "url": "", "width": 0, "height": 0 },
-            "large": { "url": "", "width": 0, "height": 0 },
-            "full": { "url": "", "width": 0, "height": 0 }
-          }
+          "filename": "ezme-3.jpg",
+          "type": "image/jpeg"
         }
       ],
       "InStock": false,

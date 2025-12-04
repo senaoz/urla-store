@@ -33,6 +33,7 @@ export async function generateMetadata({
     `Urla Zeytin Çiftliği ${productName} ürünü. Doğal ve organik ürünler.`;
   const productImage =
     productImages[product.fields.Slug] ||
+    `/products/${product.fields.Images[0]?.filename}` ||
     product.fields.Images[0]?.url ||
     "/logo.svg";
   const productUrl = `${siteUrl}/store/${product.fields.Slug}`;
@@ -51,7 +52,7 @@ export async function generateMetadata({
       siteName: t("common.siteName"),
       images: [
         {
-          url: productImage,
+          url: `/app/assets/products/${product.fields.Images[0]?.filename}`,
           width: 1200,
           height: 630,
           alt: productName,
@@ -63,7 +64,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: productName,
       description: productDescription,
-      images: [productImage],
+      images: [`/app/assets/products/${product.fields.Images[0]?.filename}`],
     },
     alternates: {
       canonical: productUrl,
@@ -94,7 +95,7 @@ export default async function Product({
   const productName = `${product.fields.Name}${product.fields.Size !== "Standart" ? ` - ${product.fields.Size}` : ""}`;
   const productImage =
     productImages[product.fields.Slug] ||
-    product.fields.Images[0]?.url ||
+    `/app/assets/products/${product.fields.Images[0]?.filename}` ||
     "/logo.svg";
   const productUrl = `${siteUrl}/store/${product.fields.Slug}`;
 
@@ -110,7 +111,7 @@ export default async function Product({
     "@type": "Product",
     name: productName,
     description: product.fields.Description || "",
-    image: productImage,
+    image: `/app/assets/products/${product.fields.Images[0]?.filename}`,
     brand: {
       "@type": "Brand",
       name: t("common.siteName"),
@@ -208,16 +209,13 @@ export default async function Product({
             className="w-full shadow-xl"
             src={
               productImages[product.fields.Slug] ||
-              product?.fields?.Images[0].url
+              `/app/assets/products/${product?.fields?.Images[0]?.filename}`
             }
             alt={product?.fields?.Name}
             width={500}
             height={500}
             placeholder={"blur"}
-            blurDataURL={
-              productImages[product.fields.Slug] ||
-              product?.fields?.Images[0].url
-            }
+            blurDataURL={`/app/assets/products/${product?.fields?.Images[0]?.filename}`}
             quality={75}
             priority={true}
           />
@@ -242,20 +240,21 @@ export default async function Product({
             </div>
             <MarkdownContent>{product.fields.Description}</MarkdownContent>
             <MarkdownContent>{product.fields.Contents}</MarkdownContent>
-            <p className={"text-sm italic"}>* {t("product.shippingNote")}</p>
+            <p>
+              Sipariş vermek için +90 553 270 45 08 numarası üzerinden iletişime
+              geçebilirsiniz.
+            </p>
+            {
+              // <p className={"text-sm italic"}>* {t("product.shippingNote")}</p>
+            }
             <div className="h-4" />
             {product.fields.InStock ? (
               <Link
-                href={
-                  product.fields.Link
-                    ? product.fields.Link
-                    : `https://api.whatsapp.com/send?phone=905532704508&text=${encodeURIComponent(
-                        t("product.whatsappMessage", {
-                          product:
-                            product.fields.Name + " - " + product.fields.Size,
-                        }),
-                      )}`
-                }
+                href={`https://api.whatsapp.com/send?phone=905532704508&text=${encodeURIComponent(
+                  t("product.whatsappMessage", {
+                    product: product.fields.Name + " - " + product.fields.Size,
+                  }),
+                )}`}
                 target={"_blank"}
               >
                 <div className="button text-center">{t("product.buyNow")}</div>
@@ -271,10 +270,15 @@ export default async function Product({
           {others.slice(0, 4).map((other: ProductInterface) => (
             <Link href={`/store/${other.fields.Slug}`} key={other.id}>
               <Image
-                src={other.fields.Images[0].url}
+                src={
+                  productImages[other.fields.Slug] || productImages["default"]
+                }
                 alt={other.fields.Name}
                 width={300}
                 height={300}
+                quality={75}
+                priority={true}
+                sizes="300px"
               />
             </Link>
           ))}
